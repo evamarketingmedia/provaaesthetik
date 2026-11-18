@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AESTHETIK STUDIO — Istituto Beauty &amp; Anti-Age a Mendrisio (proposta)</title>
+<meta name="description" content="Aesthetik Studio, istituto beauty e anti-age a Mendrisio: viso e corpo, sguardo, unghie. Su appuntamento, da lunedì a sabato.">
+<style>
+@font-face{font-family:'BioRhyme Expanded';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/BioRhymeExpanded-Regular.woff2) format('woff2')}
+@font-face{font-family:'BioRhyme Expanded';font-weight:700;font-style:normal;font-display:swap;src:url(fonts/BioRhymeExpanded-Bold.woff2) format('woff2')}
+@font-face{font-family:'BioRhyme Expanded';font-weight:800;font-style:normal;font-display:swap;src:url(fonts/BioRhymeExpanded-ExtraBold.woff2) format('woff2')}
+@font-face{font-family:'Stint Ultra Expanded';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/StintUltraExpanded-Regular.woff2) format('woff2')}
+body{margin:0;background:#000000}
+a{color:#FFFFFF;text-decoration:none}a:hover{color:#B98BFF}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+@media (max-width: 640px){
+.m-hide{display:none!important}
+.m-brand{font-size:13px!important;padding:6px 0!important;line-height:1.25!important}
+.m-block{display:block}
+.m-hero{gap:28px!important}
+.m-cta{display:flex!important;justify-content:center;width:100%;text-align:center}
+.m-bleed{padding:0!important}
+.m-face{aspect-ratio:1/1!important;object-position:86% 50%}
+.m-band{padding-top:56px!important;padding-bottom:56px!important}
+.m-motto{font-size:10vw!important}
+.m-simg{flex:1 1 100%!important}
+.m-gallery{gap:12px!important}
+.m-portrait{overflow:hidden;aspect-ratio:4/5}
+.m-portrait img{width:160%!important;max-width:none!important;margin-left:-29%!important;aspect-ratio:640/617!important}
+.m-map iframe{height:320px!important}
+.m-callbar{display:flex!important}
+.m-footer{padding-bottom:88px!important}
+}
+
+.p-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:0 clamp(20px,5.5vw,80px);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.p-bar nav{display:flex;align-items:center;gap:36px}
+.p-bar a{padding:14px 0}
+.p-name{background:#fff;color:#000;display:flex;align-items:center;justify-content:center;padding:clamp(20px,3.6vw,40px) 16px}
+.p-name h1{margin:0;color:#000;font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800;font-size:clamp(15px,4.7vw,68px);line-height:1;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.p-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,700px) minmax(0,1fr);align-items:end;padding:0 clamp(20px,5.5vw,80px)}
+.p-face{display:block;width:100%;aspect-ratio:7/5;height:auto;object-fit:cover;object-position:50% 36%}
+.p-intro{margin:0 32px 56px 0;font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 700;font-size:clamp(16px,1.35vw,19px);line-height:1.35}
+.p-cta{margin:0 0 56px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.p-cta p{margin:0;color:#CFCFCF}
+.p-cta a{box-sizing:border-box;display:inline-flex;align-items:center;min-height:56px;padding:0 20px;background:#8B2BFF;color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.p-sub{background:#fff;color:#000;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px 16px;font-size:clamp(12px,1.25vw,18px);text-transform:uppercase;letter-spacing:.2em}
+.p-marq{background:#8B2BFF;overflow:hidden;padding:clamp(18px,2.4vw,32px) 0}
+.p-track{display:flex;width:max-content;align-items:center;animation:p-scroll 28s linear infinite}
+.p-track span{font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800;font-size:clamp(34px,6.1vw,88px);line-height:1;text-transform:uppercase;white-space:nowrap}
+.p-track i{display:block;flex:none;width:clamp(12px,1.5vw,22px);height:clamp(12px,1.5vw,22px);background:#000;margin:0 clamp(20px,2.8vw,40px)}
+@keyframes p-scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.p-track{animation:none}}
+.p-det{border-bottom:2px solid #fff}
+.p-det[open]{background:#fff;color:#000;border-bottom-color:#fff}
+.p-det summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:clamp(84px,10.3vw,148px);padding:0 clamp(20px,5.5vw,80px)}
+.p-det summary::-webkit-details-marker{display:none}
+.p-det summary:focus-visible{outline:3px solid #8B2BFF;outline-offset:-6px}
+.p-title{font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800;font-size:clamp(24px,5.8vw,84px);line-height:1;text-transform:uppercase}
+.p-meta{display:flex;align-items:center;gap:24px;font-size:14px;flex:none}
+.p-ico{flex:none}
+.p-det[open] .p-ico .v{display:none}
+.p-panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:32px 64px;align-items:start;padding:0 clamp(20px,5.5vw,80px) clamp(32px,4.4vw,56px)}
+.p-panel ul{list-style:none;margin:0;padding:0;border-top:2px solid #000;font-size:clamp(15px,1.25vw,18px)}
+.p-panel li{padding:12px 0;border-bottom:1px solid #000}
+.p-imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px;align-items:start}
+.p-imgs img{display:block;width:100%;height:auto;object-fit:cover;filter:grayscale(1)}
+@media (max-width:1279px){
+.p-hero{grid-template-columns:minmax(0,1fr);padding:0}
+.p-face{order:-1;aspect-ratio:1/1}
+.p-intro{margin:32px clamp(20px,5.5vw,80px) 24px}
+.p-cta{margin:0 clamp(20px,5.5vw,80px) 40px}
+}
+@media (max-width:640px){
+.p-count{display:none}
+.p-meta{gap:0}
+.p-ico{width:28px;height:28px}
+.p-cta a{width:100%;justify-content:center}
+.p-sub{letter-spacing:.12em}
+.p-bar nav{gap:0}
+}
+</style>
+</head>
+<body>
+<div style="background: #000000; color: #FFFFFF; font-family: 'Stint Ultra Expanded', 'Rockwell', 'Courier New', serif; font-size: 15px; line-height: 1.75">
+
+<div id="top" class="p-bar">
+<a href="tel:+41796923596">+41 79 692 35 96</a>
+<nav aria-label="Principale">
+<a href="#servizi" class="m-hide">Servizi</a>
+<a href="#studio" class="m-hide">Lo studio</a>
+<a href="#titolare" class="m-hide">Chi sono</a>
+<a href="#contatti">Contatti</a>
+</nav>
+</div>
+<div class="p-name"><h1>Aesthetik Studio</h1></div>
+<div class="p-hero">
+<p class="p-intro">Viso, corpo, sguardo, unghie. A Mendrisio, da Nadja.</p>
+<img class="p-face" src="img/volto-hero.jpg" alt="Volto femminile con trucco scuro e occhi chiusi, immagine simbolo dello studio" width="1086" height="1448">
+<div class="p-cta">
+<p>Lunedì – sabato, orario continuato. Solo su appuntamento.</p>
+<a href="#contatti">Prendi appuntamento</a>
+</div>
+</div>
+<div class="p-sub">Istituto Beauty &amp; Anti-Age</div>
+<section class="p-marq" aria-label="Il motto"><div class="p-track" aria-hidden="false"><span>Trust my beauty concept</span><i aria-hidden="true"></i><span>Trust my beauty concept</span><i aria-hidden="true"></i><span>Trust my beauty concept</span><i aria-hidden="true"></i><span>Trust my beauty concept</span><i aria-hidden="true"></i><span>Trust my beauty concept</span><i aria-hidden="true"></i><span>Trust my beauty concept</span><i aria-hidden="true"></i></div></section>
+<section id="servizi" aria-label="Servizi" style="padding-bottom: clamp(48px, 6vw, 96px)">
+<details class="p-det">
+<summary><span class="p-title">Viso &amp; corpo</span><span class="p-meta"><span class="p-count">5 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><ul><li>Epilazione tradizionale e brasiliana</li><li>Beauty e anti-age viso, collo e décolleté</li><li>Pressomassaggio estetico total body</li><li>Skin-care, skin-prep e make-up</li><li>Skin-care soft per le bambine</li></ul>
+<div class="p-imgs"><img src="img/volto.jpg" alt="Volto femminile in bianco e nero con trucco scuro" style="aspect-ratio: 354 / 242"></div></div>
+</details>
+<details class="p-det" open>
+<summary><span class="p-title">Sguardo</span><span class="p-meta"><span class="p-count">5 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><ul><li>Mascara semipermanente</li><li>Extension e infoltimento ciglia</li><li>Ricostruzione e infoltimento sopracciglia</li><li>Laminazione ciglia e sopracciglia</li><li>Tintura intensiva rimodellante sopracciglia</li></ul>
+<div class="p-imgs"><img src="img/t-sopracciglia.jpg" alt="Sopracciglio ricostruito pelo per pelo con una pinzetta" style="aspect-ratio: 361 / 256"><img src="img/t-ciglia.jpg" alt="Occhio prima e dopo il mascara semipermanente" style="aspect-ratio: 361 / 256"></div></div>
+</details>
+<details class="p-det">
+<summary><span class="p-title">Unghie</span><span class="p-meta"><span class="p-count">4 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><ul><li>Rinforzo, ricostruzione e allungamento in gel, acrilico e smalto semipermanente</li><li>Manicure estetica e anti-age per lei e lui</li><li>Pedicure estetica per lei</li><li>Happy manicure e pedicure per le bambine</li></ul>
+<div class="p-imgs"><img src="img/t-unghie.jpg" alt="Unghie con smalto nero lucido" style="aspect-ratio: 309 / 232"></div></div>
+</details>
+</section>
+
+<section id="studio" style="padding: 0 clamp(20px, 5.5vw, 80px) clamp(72px, 9vw, 128px)">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 64px">
+<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(28px, 4.6vw, 66px); line-height: 1.05; text-transform: uppercase">Lo studio</h2>
+<p style="margin: 0; flex: 0 1 480px; color: #CFCFCF; text-wrap: pretty">Volta in mattoni a vista, luci calde sulle pareti, arredi neri. Un posto raccolto, dove ti seguo io dall&#39;inizio alla fine.</p>
+</div>
+<div class="m-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 24px">
+<img src="img/studio-1.jpg" alt="Interno dello studio: postazione unghie, lettino e volta in mattoni" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.08)">
+<img src="img/studio-2.jpg" alt="Interno dello studio: ingresso, specchio e mensole nere" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.08)">
+</div>
+</div>
+</section>
+
+<section id="contatti" style="padding: clamp(72px, 9vw, 128px) clamp(20px, 5.5vw, 80px); border-top: 1px solid #3A3A3A">
+<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: min(5.5vw, 66px); line-height: 1.05; text-transform: uppercase">Prendi appuntamento</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 64px 96px; align-items: start">
+<div style="width: 100%; max-width: 440px; padding: 0 0 18px 18px; box-sizing: border-box">
+<div style="box-shadow: -18px 18px 0 #8B2BFF">
+<img src="img/ingresso.jpg" alt="Ingresso di Aesthetik Studio visto dalla strada" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; filter: grayscale(1) contrast(1.08)">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 36px">
+<dl style="margin: 0; width: 100%; display: flex; flex-direction: column; border-top: 2px solid #FFFFFF">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Dove</dt>
+<dd style="flex: 1 1 240px; margin: 0">Via San Damiano 9<br>6850 Mendrisio</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Orari</dt>
+<dd style="flex: 1 1 240px; margin: 0">Lunedì – sabato, orario continuato<br>Solo su appuntamento</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Contatti</dt>
+<dd style="flex: 1 1 240px; margin: 0"><a href="tel:+41796923596">+41 79 692 35 96</a><br><a href="mailto:aesthetik@bluewin.ch">aesthetik@bluewin.ch</a><br>[@INSTAGRAM]</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Lingue</dt>
+<dd style="flex: 1 1 240px; margin: 0">Parlo italiano, inglese, francese, tedesco e aramaico</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Sconti</dt>
+<dd style="flex: 1 1 240px; margin: 0">Agevolazioni per studenti e AVS</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid #3A3A3A">
+<dt style="flex: 0 0 130px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #BDBDBD">Pagamenti</dt>
+<dd style="flex: 1 1 240px; margin: 0">Contanti, TWINT e carte di credito</dd>
+</div>
+</dl>
+<a class="m-cta" href="tel:+41796923596" style="display: inline-flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 30px; background: #8B2BFF; color: #FFFFFF; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; box-sizing: border-box">Chiama il +41 79 692 35 96
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="titolare" style="padding: clamp(72px, 9vw, 128px) clamp(20px, 5.5vw, 80px) clamp(64px, 8vw, 112px); border-top: 1px solid #3A3A3A">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 48px 80px; align-items: center">
+<div class="m-portrait">
+<img src="img/titolare.png" alt="Ritratto in bianco e nero della titolare di Aesthetik Studio" style="display: block; width: 100%; max-width: 600px; aspect-ratio: 640 / 617; object-fit: cover">
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
+<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(28px, 4.6vw, 66px); line-height: 1.05; text-transform: uppercase">Piacere, Nadja</h2>
+<p style="margin: 0; max-width: 540px; color: #CFCFCF; text-wrap: pretty">Sono attenta, empatica e perfezionista: guardo i dettagli che di solito sfuggono e non mi fermo finché non sono come devono essere. Ma la cosa a cui tengo di più è un&#39;altra: che chi entra nel mio studio esca sentendosi bene.</p>
+</div>
+</div>
+</section>
+
+<section class="m-map" id="mappa" aria-label="Mappa" style="border-top: 1px solid #3A3A3A">
+<iframe title="Mappa: Aesthetik Studio, Via San Damiano 9, Mendrisio" src="https://www.google.com/maps?q=Via+San+Damiano+9%2C+6850+Mendrisio&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display: block; width: 100%; height: 420px; border: 0; filter: grayscale(1) invert(0.92) contrast(0.9)"></iframe>
+<p style="margin: 0; padding: 16px clamp(20px, 5.5vw, 80px); font-size: 13px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+San+Damiano+9%2C+6850+Mendrisio" style="text-decoration: underline">Apri in Google Maps</a></p>
+</section>
+
+<a class="m-callbar" href="tel:+41796923596" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; min-height: 56px; align-items: center; justify-content: center; background: #8B2BFF; color: #FFFFFF; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em">Chiama per un appuntamento</a>
+
+<footer class="m-footer" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; padding: 28px clamp(20px, 5.5vw, 80px); border-top: 2px solid #FFFFFF; font-size: 12px; color: #BDBDBD">
+<span style="font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: 14px; color: #FFFFFF">AESTHETIK STUDIO</span>
+<span>© 2026 Aesthetik Studio</span>
+<a href="privacy.html" style="color: #BDBDBD; padding: 12px 0">Privacy</a>
+</footer>
+
+</div>
+</body>
+</html>
