@@ -32,6 +32,20 @@ img{max-width:100%}
 .m-callbar{display:flex!important}
 .m-footer{padding-bottom:88px!important}
 }
+.p-brands{border-top:2px solid #fff;padding:clamp(36px,4.4vw,56px) clamp(20px,5.5vw,80px) clamp(32px,4vw,48px)}
+.p-brands-head{max-width:1280px;margin:0 auto clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:6px}
+.p-brands h2{margin:0;font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 700;font-size:clamp(16px,1.5vw,20px);line-height:1.3}
+.p-brands-head p{margin:0;font-size:13px;color:#BDBDBD}
+.p-brands ul{list-style:none;margin:0 auto;padding:0;max-width:1280px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.p-brands li{display:flex;align-items:center;justify-content:center}
+.p-brands img{display:block;width:auto;max-width:100%;opacity:.92}
+@media (max-width:1099px){.p-brands ul{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 24px}}
+@media (max-width:640px){.p-brands ul{grid-template-columns:repeat(2,1fr)}.p-brands img{height:auto!important;max-height:30px;max-width:140px}}
+
+.p-more{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:clamp(28px,3.6vw,48px) clamp(20px,5.5vw,80px) clamp(32px,4vw,56px)}
+.p-more p{margin:0;max-width:520px;color:#CFCFCF;text-wrap:balance}
+.p-more a{font-size:13px;color:#fff;text-decoration:underline;text-underline-offset:5px;padding:8px 0}
+.p-lead{grid-column:1/-1;margin:0;max-width:640px;font-size:clamp(15px,1.3vw,18px)}
 
 .p-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:0 clamp(20px,5.5vw,80px);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
 .p-bar nav{display:flex;align-items:center;gap:36px}
@@ -43,7 +57,7 @@ img{max-width:100%}
 .p-intro{margin:0 32px 56px 0;font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 700;font-size:clamp(16px,1.35vw,19px);line-height:1.35}
 .p-cta{margin:0 0 56px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:20px}
 .p-cta p{margin:0;color:#CFCFCF}
-.p-cta a{box-sizing:border-box;display:inline-flex;align-items:center;min-height:56px;padding:0 20px;background:#8B2BFF;color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.p-cta a{box-sizing:border-box;display:inline-flex;align-items:center;min-height:56px;padding:12px 20px;background:#8B2BFF;color:#fff;font-size:12px;line-height:1.35;text-transform:uppercase;letter-spacing:.06em}
 .p-sub{background:#fff;color:#000;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px 16px;font-size:clamp(12px,1.25vw,18px);text-transform:uppercase;letter-spacing:.2em}
 .p-marq{background:#8B2BFF;padding:clamp(14px,1.6vw,22px) 20px;text-align:center}
 .p-track{margin:0}
@@ -57,11 +71,12 @@ img{max-width:100%}
 .p-meta{display:flex;align-items:center;gap:24px;font-size:14px;flex:none}
 .p-ico{flex:none}
 .p-det[open] .p-ico .v{display:none}
-.p-panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:32px 64px;align-items:start;padding:0 clamp(20px,5.5vw,80px) clamp(32px,4.4vw,56px)}
+.p-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 64px;align-items:start;padding:0 clamp(20px,5.5vw,80px) clamp(32px,4.4vw,56px)}
 .p-panel ul{list-style:none;margin:0;padding:0;border-top:2px solid #000;font-size:clamp(15px,1.25vw,18px)}
 .p-panel li{padding:12px 0;border-bottom:1px solid #000}
-.p-imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px;align-items:start}
+.p-imgs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
 .p-imgs img{display:block;width:100%;height:auto;object-fit:cover;filter:grayscale(1)}
+@media (max-width:900px){.p-panel{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:1279px){
 .p-hero{grid-template-columns:minmax(0,1fr);padding:0}
 .p-face{order:-1;aspect-ratio:1/1}
@@ -92,29 +107,30 @@ img{max-width:100%}
 </div>
 <div class="p-name"><h1>Aesthetik Studio</h1></div>
 <div class="p-hero">
-<p class="p-intro">Viso, corpo, sguardo, unghie. A Mendrisio, da Nadja.</p>
+<p class="p-intro">La bellezza non ha un solo standard.</p>
 <img class="p-face" src="img/volto-hero.jpg" alt="Volto femminile con trucco scuro e occhi chiusi, immagine simbolo dello studio" width="1086" height="1448">
 <div class="p-cta">
-<p>Lunedì – sabato, orario continuato. Solo su appuntamento.</p>
-<a href="#contatti">Prendi appuntamento</a>
+<p>Trattamenti estetici personalizzati per valorizzare ciò che ti rende unica.</p>
+<a href="https://wa.me/41796923596?text=Ciao%20Nadja!%20Ho%20visitato%20il%20sito%20di%20Aesthetik%20Studio%20e%20vorrei%20prenotare%20un%20appuntamento.%20Potresti%20indicarmi%20le%20prossime%20disponibilit%C3%A0%3F%20Grazie!" target="_blank" rel="noopener">Prenota un appuntamento</a>
 </div>
 </div>
 <div class="p-sub">Istituto Beauty &amp; Anti-Age</div>
 <section class="p-marq" aria-label="Il motto"><p class="p-track"><span>Trust my beauty concept</span></p></section>
+<div class="p-more"><p>Un approccio personale all'estetica, nel rispetto delle tue esigenze e della tua individualità.</p><a href="#servizi">Scopri i trattamenti ↓</a></div>
 <section id="servizi" aria-label="Servizi" style="padding-bottom: clamp(48px, 6vw, 96px)">
 <details class="p-det">
-<summary><span class="p-title">Viso &amp; corpo</span><span class="p-meta"><span class="p-count">5 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
-<div class="p-panel"><ul><li>Epilazione tradizionale e brasiliana</li><li>Beauty e anti-age viso, collo e décolleté</li><li>Pressomassaggio estetico total body</li><li>Skin-care, skin-prep e make-up</li><li>Skin-care soft per le bambine</li></ul>
-<div class="p-imgs"><img src="img/volto.jpg" alt="Volto femminile in bianco e nero con trucco scuro" style="aspect-ratio: 354 / 242"></div></div>
+<summary><span class="p-title">Viso &amp; corpo</span><span class="p-meta"><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><p class="p-lead">Trattamenti estetici e anti-age dedicati alla cura della pelle e al benessere del corpo.</p><ul><li>Epilazione tradizionale e brasiliana</li><li>Beauty e anti-age viso, collo e décolleté</li><li>Pressomassaggio estetico total body</li><li>Skin-care, skin-prep e make-up</li><li>Skin-care soft per le bambine</li></ul>
+<div class="p-imgs"><img src="img/volto.jpg" alt="Volto femminile in bianco e nero con trucco scuro" style="aspect-ratio: 354 / 242"><img src="img/payot.jpg" alt="Prodotti Payot per il trattamento viso sul carrello di lavoro" style="aspect-ratio: 590 / 640"><img src="img/make-up.jpg" alt="Prodotti make-up professionali in esposizione" style="aspect-ratio: 4 / 3"></div></div>
 </details>
 <details class="p-det" open>
-<summary><span class="p-title">Sguardo</span><span class="p-meta"><span class="p-count">5 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
-<div class="p-panel"><ul><li>Mascara semipermanente</li><li>Extension e infoltimento ciglia</li><li>Ricostruzione e infoltimento sopracciglia</li><li>Laminazione ciglia e sopracciglia</li><li>Tintura intensiva rimodellante sopracciglia</li></ul>
-<div class="p-imgs"><img src="img/t-sopracciglia.jpg" alt="Sopracciglio ricostruito pelo per pelo con una pinzetta" style="aspect-ratio: 361 / 256"><img src="img/t-ciglia.jpg" alt="Occhio prima e dopo il mascara semipermanente" style="aspect-ratio: 361 / 256"></div></div>
+<summary><span class="p-title">Sguardo</span><span class="p-meta"><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><p class="p-lead">Tecniche mirate per definire, intensificare e valorizzare l'espressività dello sguardo.</p><ul><li>Mascara semipermanente</li><li>Extension e infoltimento ciglia</li><li>Ricostruzione e infoltimento sopracciglia</li><li>Laminazione ciglia e sopracciglia</li><li>Tintura intensiva rimodellante sopracciglia</li></ul>
+<div class="p-imgs"><img src="img/t-sopracciglia.jpg" alt="Sopracciglio ricostruito pelo per pelo con una pinzetta" style="aspect-ratio: 361 / 256"><img src="img/t-ciglia.jpg" alt="Occhio prima e dopo il mascara semipermanente" style="aspect-ratio: 361 / 256"><img src="img/ciglia-kit.jpg" alt="Valigetta e prodotti per extension ciglia" style="aspect-ratio: 3 / 4"></div></div>
 </details>
 <details class="p-det">
-<summary><span class="p-title">Unghie</span><span class="p-meta"><span class="p-count">4 trattamenti</span><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
-<div class="p-panel"><ul><li>Rinforzo, ricostruzione e allungamento in gel, acrilico e smalto semipermanente</li><li>Manicure estetica e anti-age per lei e lui</li><li>Pedicure estetica per lei</li><li>Happy manicure e pedicure per le bambine</li></ul>
+<summary><span class="p-title">Unghie</span><span class="p-meta"><svg class="p-ico" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="v" d="M12 3v18"></path><path d="M3 12h18"></path></svg></span></summary>
+<div class="p-panel"><p class="p-lead">Estetica, precisione e armonia, dalla manicure alla ricostruzione.</p><ul><li>Rinforzo, ricostruzione e allungamento in gel, acrilico e smalto semipermanente</li><li>Manicure estetica e anti-age per lei e lui</li><li>Pedicure estetica per lei</li><li>Happy manicure e pedicure per le bambine</li></ul>
 <div class="p-imgs"><img src="img/t-unghie.jpg" alt="Unghie con smalto nero lucido" style="aspect-ratio: 309 / 232"></div></div>
 </details>
 </section>
@@ -123,7 +139,7 @@ img{max-width:100%}
 <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 64px">
 <h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(28px, 4.6vw, 66px); line-height: 1.05; text-transform: uppercase">Lo studio</h2>
-<p style="margin: 0; flex: 0 1 480px; color: #CFCFCF; text-wrap: pretty">Volta in mattoni a vista, luci calde sulle pareti, arredi neri. Un posto raccolto, dove ti seguo io dall&#39;inizio alla fine.</p>
+<div style="flex: 0 1 480px; display: flex; flex-direction: column; gap: 12px"><p style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 700; font-size: clamp(18px, 1.7vw, 24px); line-height: 1.3">Uno spazio dedicato a te.</p><p style="margin: 0; color: #CFCFCF; text-wrap: pretty">Un ambiente intimo e riservato, nel cuore di Mendrisio, dove ogni appuntamento è un momento di cura e attenzione esclusiva. Un luogo in cui sentirsi ascoltati, a proprio agio e valorizzati.</p></div>
 </div>
 <div class="m-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 24px">
 <img src="img/studio-1.jpg" alt="Interno dello studio: postazione unghie, lettino e volta in mattoni" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.08)">
@@ -132,9 +148,24 @@ img{max-width:100%}
 </div>
 </section>
 
+<section id="titolare" style="padding: clamp(72px, 9vw, 128px) clamp(20px, 5.5vw, 80px) clamp(64px, 8vw, 112px); border-top: 1px solid #3A3A3A">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 48px 80px; align-items: center">
+<div class="m-portrait">
+<img src="img/titolare.png" alt="Ritratto in bianco e nero della titolare di Aesthetik Studio" style="display: block; width: 100%; max-width: 600px; aspect-ratio: 640 / 617; object-fit: cover">
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
+<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(24px, 3.4vw, 48px); line-height: 1.1; text-transform: uppercase; text-wrap: balance">Dietro ogni dettaglio, ci sono io.</h2>
+<p style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.35">Sono Nadja, la persona dietro Aesthetik Studio.</p>
+<p style="margin: 0; max-width: 540px; color: #CFCFCF; text-wrap: pretty">Credo in un&#39;estetica che sappia ascoltare, rispettare e valorizzare l&#39;individualità di ciascuno. Empatia, precisione e attenzione al dettaglio guidano il mio lavoro, con un approccio personale a ogni trattamento.</p>
+<p style="margin: 0; max-width: 540px; color: #CFCFCF; text-wrap: pretty">Per me, la bellezza non è raggiungere un ideale, ma sentirsi bene nella propria unicità.</p>
+</div>
+</div>
+</section>
+
 <section id="contatti" style="padding: clamp(72px, 9vw, 128px) clamp(20px, 5.5vw, 80px); border-top: 1px solid #3A3A3A">
 <div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
-<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: min(5.5vw, 66px); line-height: 1.05; text-transform: uppercase">Prendi appuntamento</h2>
+<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(24px, 4vw, 56px); line-height: 1.08; text-transform: uppercase; text-wrap: balance">Il tuo prossimo momento di bellezza.</h2>
+<p style="margin: -24px 0 0; max-width: 560px; color: #CFCFCF; text-wrap: pretty">Concediti uno spazio dedicato a te.<br>Ricevo dal lunedì al sabato, esclusivamente su appuntamento.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 64px 96px; align-items: start">
 <div style="width: 100%; max-width: 440px; padding: 0 0 18px 18px; box-sizing: border-box">
 <div style="box-shadow: -18px 18px 0 #8B2BFF">
@@ -175,17 +206,7 @@ img{max-width:100%}
 </div>
 </section>
 
-<section id="titolare" style="padding: clamp(72px, 9vw, 128px) clamp(20px, 5.5vw, 80px) clamp(64px, 8vw, 112px); border-top: 1px solid #3A3A3A">
-<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 48px 80px; align-items: center">
-<div class="m-portrait">
-<img src="img/titolare.png" alt="Ritratto in bianco e nero della titolare di Aesthetik Studio" style="display: block; width: 100%; max-width: 600px; aspect-ratio: 640 / 617; object-fit: cover">
-</div>
-<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
-<h2 style="margin: 0; font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: clamp(28px, 4.6vw, 66px); line-height: 1.05; text-transform: uppercase">Piacere, Nadja</h2>
-<p style="margin: 0; max-width: 540px; color: #CFCFCF; text-wrap: pretty">Sono attenta, empatica e perfezionista: guardo i dettagli che di solito sfuggono e non mi fermo finché non sono come devono essere. Ma la cosa a cui tengo di più è un&#39;altra: che chi entra nel mio studio esca sentendosi bene.</p>
-</div>
-</div>
-</section>
+
 
 <section class="m-map" id="mappa" aria-label="Mappa" style="border-top: 1px solid #3A3A3A">
 <iframe title="Mappa: Aesthetik Studio, Via San Damiano 9, Mendrisio" src="https://www.google.com/maps?q=Via+San+Damiano+9%2C+6850+Mendrisio&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display: block; width: 100%; height: 420px; border: 0; filter: grayscale(1) invert(0.92) contrast(0.9)"></iframe>
@@ -194,7 +215,11 @@ img{max-width:100%}
 
 <a class="m-callbar" href="tel:+41796923596" style="display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; min-height: 56px; align-items: center; justify-content: center; background: #8B2BFF; color: #FFFFFF; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em">Chiama per un appuntamento</a>
 
-<footer class="m-footer" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; padding: 28px clamp(20px, 5.5vw, 80px); border-top: 2px solid #FFFFFF; font-size: 12px; color: #BDBDBD">
+<section class="p-brands" aria-labelledby="brand-t">
+<div class="p-brands-head"><h2 id="brand-t">I miei alleati di bellezza.</h2><p>Brand professionali selezionati con cura.</p></div>
+<ul><li><img src="img/brand/payot.png" alt="Payot Paris" style="height: 34px"></li><li><img src="img/brand/opi.png" alt="OPI" style="height: 30px"></li><li><img src="img/brand/saremco.png" alt="Saremco Cosmetics" style="height: 38px"></li><li><img src="img/brand/lashbelong.png" alt="Lash beLong" style="height: 32px"></li><li><img src="img/brand/nanolash.png" alt="Nanolash" style="height: 26px"></li><li><img src="img/brand/nanobrow.png" alt="Nanobrow" style="height: 26px"></li></ul>
+</section>
+<footer class="m-footer" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; padding: 28px clamp(20px, 5.5vw, 80px); border-top: 1px solid #3A3A3A; font-size: 12px; color: #BDBDBD">
 <span style="font-family: 'BioRhyme Expanded', 'Rockwell', serif; font-weight: 800; font-size: 14px; color: #FFFFFF">AESTHETIK STUDIO</span>
 <span>© 2026 Aesthetik Studio</span>
 <a href="privacy.html" style="color: #BDBDBD; padding: 12px 0">Privacy</a>
